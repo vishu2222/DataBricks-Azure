@@ -6,7 +6,7 @@
 -- DBTITLE 1,person_address
 create database if not exists db_bronze;
 -- drop table db_bronze.person_address;
-create or replace table db_bronze.person_address (
+create table db_bronze.person_address (
 AddressID string		
 ,AddressLine1 string		
 ,AddressLine2 string		
@@ -25,7 +25,7 @@ location 'abfss://bronze@vishu.dfs.core.windows.net/Person/Address'
 -- COMMAND ----------
 
 -- DBTITLE 1,person_stateProvince
-create or replace table db_bronze.person_stateProvince(
+create table db_bronze.person_stateProvince(
 StateProvinceID  string,
 StateProvinceCode string,
 CountryRegionCode string,
